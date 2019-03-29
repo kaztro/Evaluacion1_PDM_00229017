@@ -22,6 +22,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void bind() {
+        ///EL BOTON////////////////////////////
+        btn_send = findViewById(R.id.btn_send);
+        ///LOS "BOTONES"///////////////////////
         btn1 = findViewById(R.id.LL_FirstBtn);
         btn2 = findViewById(R.id.LL_SecondB);
         btn3 = findViewById(R.id.LL_ThirdB);
@@ -31,32 +34,64 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn7 = findViewById(R.id.LL_SeventhBtn);
         btn8 = findViewById(R.id.LL_eightB);
         btn9 = findViewById(R.id.LL_NineB);
+        ///LOS CONTADORES/////////////////////
+        tv_cont1 = findViewById(R.id.tv_cont1);
+        tv_cont2 = findViewById(R.id.tv_cont2);
+        tv_cont3 = findViewById(R.id.tv_cont3);
+        tv_cont4 = findViewById(R.id.tv_cont4);
+        tv_cont5 = findViewById(R.id.tv_cont5);
+        tv_cont6 = findViewById(R.id.tv_cont6);
+        tv_cont7 = findViewById(R.id.tv_cont7);
+        tv_cont8 = findViewById(R.id.tv_cont8);
+        tv_cont9 = findViewById(R.id.tv_cont9);
+        ///LOS EDITS///////////////////////////
+        et_username = findViewById(R.id.et_usuario);
+        et_mail = findViewById(R.id.et_mail);
     }
 
-    private void countPP() {
-
+    private void countPP(TextView tv, int cont) {
+        tv.setText(cont);
     }
 
     @Override
     public void onClick(View v) {
+        int c1 = 0, c2 = 0, c3 = 0, c4 = 0, c5 = 0, c6 = 0, c7 = 0, c8 = 0, c9 = 0;
         switch (v.getId()) {
             case R.id.LL_FirstBtn:
+                c1++;
+                countPP(tv_cont1, c1);
                 break;
             case R.id.LL_SecondB:
+                c2++;
+                countPP(tv_cont2, c2);
                 break;
             case R.id.LL_ThirdB:
+                c3++;
+                countPP(tv_cont3, c3);
                 break;
             case R.id.LL_FourthBtn:
+                c4++;
+                countPP(tv_cont4, c4);
                 break;
             case R.id.LL_FifthB:
+                c5++;
+                countPP(tv_cont5, c5);
                 break;
             case R.id.LL_SixthB:
+                c6++;
+                countPP(tv_cont6, c6);
                 break;
             case R.id.LL_SeventhBtn:
+                c7++;
+                countPP(tv_cont7, c7);
                 break;
             case R.id.LL_eightB:
+                c8++;
+                countPP(tv_cont8, c8);
                 break;
             case R.id.LL_NineB:
+                c9++;
+                countPP(tv_cont9, c9);
                 break;
             default:
                 break;
