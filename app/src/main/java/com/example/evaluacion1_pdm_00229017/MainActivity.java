@@ -21,8 +21,45 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
     }
 
+    private void bind() {
+        btn1 = findViewById(R.id.LL_FirstBtn);
+        btn2 = findViewById(R.id.LL_SecondB);
+        btn3 = findViewById(R.id.LL_ThirdB);
+        btn4 = findViewById(R.id.LL_FourthBtn);
+        btn5 = findViewById(R.id.LL_FifthB);
+        btn6 = findViewById(R.id.LL_SixthB);
+        btn7 = findViewById(R.id.LL_SeventhBtn);
+        btn8 = findViewById(R.id.LL_eightB);
+        btn9 = findViewById(R.id.LL_NineB);
+    }
+
+    private void countPP() {
+
+    }
+
     @Override
     public void onClick(View v) {
-
+        switch (v.getId()) {
+            case R.id.LL_FirstBtn:
+                break;
+            case R.id.LL_SecondB:
+                break;
+            case R.id.LL_ThirdB:
+                break;
+            case R.id.LL_FourthBtn:
+                break;
+            case R.id.LL_FifthB:
+                break;
+            case R.id.LL_SixthB:
+                break;
+            case R.id.LL_SeventhBtn:
+                break;
+            case R.id.LL_eightB:
+                break;
+            case R.id.LL_NineB:
+                break;
+            default:
+                break;
+        }
     }
 }
