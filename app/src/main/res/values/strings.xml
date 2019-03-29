@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Evaluacion1_PDM_00229017</string>
+    <string name="contador_de_productos">Contador de productos</string>
+    <string name="producto_1">Producto 1</string>
+    <string name="almuadilla">#</string>
+    <string name="usuario">Usuario:</string>
+    <string name="escribe_al_usuario_aqui">Escribe al usuario aqui</string>
+    <string name="correo_electronico">Correo Electronico</string>
+    <string name="dame_el_correo_o_te_rajo">Dame el correo o te rajo</string>
+    <string name="enviar">Enviar</string>
 </resources>

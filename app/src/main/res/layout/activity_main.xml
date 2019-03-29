@@ -1,18 +1,301 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/LL_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/tv_contProducts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/contador_de_productos"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_Button_Container1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/distanceBLl">
+
+
+        <LinearLayout
+            android:id="@+id/LL_FirstBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#bc1f26"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_P1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/producto_1"
+                android:textColor="@color/white"
+                android:layout_margin=""/>
+
+            <TextView
+                android:id="@+id/tv_cont1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/almuadilla"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LL_SecondB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="#8b164f">
+
+            <TextView
+                android:id="@+id/tv_P2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/producto_1"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_cont2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/almuadilla"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LL_ThirdB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="#4b2087">
+
+            <TextView
+                android:id="@+id/tv_P3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/producto_1"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_cont3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/almuadilla"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_Button_Container2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/LL_FourthBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#4b2087"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_P4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/producto_1"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_cont4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/almuadilla"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LL_FifthB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="#172b7a">
+
+            <TextView
+                android:id="@+id/tv_P5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/producto_1"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_cont5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/almuadilla"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LL_SixthB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="#004b9c">
+
+            <TextView
+                android:id="@+id/tv_P6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/producto_1"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_cont6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/almuadilla"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_Button_Container3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/distanceBLl">
+
+
+        <LinearLayout
+            android:id="@+id/LL_SeventhBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#005996"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_P7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/producto_1"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_cont7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/almuadilla"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LL_eightB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="#006063">
+
+            <TextView
+                android:id="@+id/tv_P8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/producto_1"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_cont8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/almuadilla"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LL_NineB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:background="#004e43">
+
+            <TextView
+                android:id="@+id/tv_P9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/producto_1"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_cont9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/almuadilla"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_singUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/usuario"/>
+
+        <EditText
+            android:id="@+id/et_usuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/escribe_al_usuario_aqui"/>
+
+        <TextView
+            android:id="@+id/tv_mail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/correo_electronico"/>
+
+        <EditText
+            android:id="@+id/et_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dame_el_correo_o_te_rajo"/>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enviar" />
+
+    </LinearLayout>
+
+</LinearLayout>
