@@ -47,6 +47,39 @@ public class ResumeActivity extends AppCompatActivity {
         settingText(getC7, tv_c7);
         settingText(getC8, tv_c8);
         settingText(getC9, tv_c9);
+
+        String info = "Usuario: "
+                + getUser
+                + "Correo: "
+                + getMail
+                + "Total: "
+                + getTot
+                +"Producto 1: "
+                + getC1
+                +"Producto 2: "
+                + getC2
+                +"Producto 3: "
+                + getC3
+                +"Producto 4: "
+                + getC4
+                +"Producto 5: "
+                + getC5
+                +"Producto 6: "
+                + getC6
+                +"Producto 7: "
+                + getC7
+                +"Producto 8: "
+                + getC8
+                +"Producto 9: "
+                + getC9;
+
+        btn_Share.setOnClickListener(v -> {
+            Intent mI = new Intent();
+            mI.setAction(Intent.ACTION_SEND);
+            mI.setType("text/plain");
+            mI.putExtra(Intent.EXTRA_TEXT, info);
+            startActivity(mI);
+        });
     }
 
     private void bind() {
