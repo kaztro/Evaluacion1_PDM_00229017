@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv_cont7.setOnClickListener(this);
         tv_cont8.setOnClickListener(this);
         tv_cont9.setOnClickListener(this);
+        btn_send.setOnClickListener(this);
     }
 
     private void bind() {
@@ -63,7 +64,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void countPP(TextView tv, int cont) {
-        tv.setText(cont);
+        cont++;
+        tv.setText(cont + "");
     }
 
     @Override
@@ -71,40 +73,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int c1 = 0, c2 = 0, c3 = 0, c4 = 0, c5 = 0, c6 = 0, c7 = 0, c8 = 0, c9 = 0;
         switch (v.getId()) {
             case R.id.tv_cont1:
-                c1++;
                 countPP(tv_cont1, c1);
                 break;
             case R.id.tv_cont2:
-                c2++;
                 countPP(tv_cont2, c2);
                 break;
             case R.id.tv_cont3:
-                c3++;
                 countPP(tv_cont3, c3);
                 break;
             case R.id.tv_cont4:
-                c4++;
                 countPP(tv_cont4, c4);
                 break;
             case R.id.tv_cont5:
-                c5++;
                 countPP(tv_cont5, c5);
                 break;
             case R.id.tv_cont6:
-                c6++;
                 countPP(tv_cont6, c6);
                 break;
             case R.id.tv_cont7:
-                c7++;
                 countPP(tv_cont7, c7);
                 break;
             case R.id.tv_cont8:
-                c8++;
                 countPP(tv_cont8, c8);
                 break;
             case R.id.tv_cont9:
-                c9++;
                 countPP(tv_cont9, c9);
+                break;
+            case R.id.btn_send:
+                int total = c1+c2+c3+c4+c5+c6+c7+c8+c9;
                 break;
             default:
                 break;

@@ -8,4 +8,11 @@
     <string name="correo_electronico">Correo Electronico</string>
     <string name="dame_el_correo_o_te_rajo">Dame el correo o te rajo</string>
     <string name="enviar">Enviar</string>
+    <string name="user">User:</string>
+    <string name="nombreu">nombreU</string>
+    <string name="correo">Correo:</string>
+    <string name="correu">correU</string>
+    <string name="share">Share</string>
+    <string name="insertatotal">InsertaTotal</string>
+    <string name="total">Total:</string>
 </resources>
